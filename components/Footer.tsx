@@ -1,7 +1,7 @@
 const navigation = [
   {
     name: 'Linkedin',
-    href: '#',
+    href: 'https://www.linkedin.com/in/nathalia-limo-0a19b411b/',
     icon: () => (
       <svg
         id="Group_1282"
@@ -36,7 +36,7 @@ const navigation = [
   },
   {
     name: 'GitHub',
-    href: '#',
+    href: 'https://github.com/LimoNathalia',
     icon: (props: any) => (
       <svg fill="currentColor" viewBox="0 0 24 24" {...props}>
         <path
@@ -54,11 +54,17 @@ export default function Footer() {
 
   return (
     <footer className="flex justify-center pt-12 md:pt-20">
-      <div className="bg-black border border-t-secondary w-full z-50 ease-in duration-300 mx-auto max-w-7xl rounded-t-[3.5rem]">
-        <div className="border w-full ease-in duration-300 mx-auto max-w-7xl rounded-t-[3.5rem] py-12 px-6 md:flex md:items-center md:justify-between lg:px-8">
+      <div className="bg-black border border-t-primary border-r-primary border-l-primary w-full z-50 ease-in duration-300 mx-auto rounded-t-[3.5rem]">
+        <div className="w-full ease-in duration-300 mx-auto max-w-7xl rounded-t-[3.5rem] p-6 md:flex md:items-center md:justify-between lg:px-8">
           <div className="flex justify-center space-x-6 md:order-2">
             {navigation.map((item) => (
-              <a key={item.name} href={item.href} className="text-secondary hover:text-white">
+              <a
+                key={item.name}
+                href={item.href}
+                className="text-primary hover:text-white"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <span className="sr-only">{item.name}</span>
                 <item.icon className="h-6 w-6" aria-hidden="true" />
               </a>

@@ -4,18 +4,20 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Delicious+Handrawn&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 
 @layer base {
   html,
   body {
-    font-family: 'Shadows Into Light', cursive;
-    background-color: #79031d;
+    font-family: 'Lato', sans-serif;
+    background-color: '#F5F7F5';
+    scroll-behavior: smooth;
   }
   p {
-    font-family: Open Sans, sans-serif;
+    font-family: 'Lato', sans-serif;
   }
   .logo {
-    font-family: 'Shadows Into Light', cursive;
+    font-family: 'Lato', sans-serif;
   }
 }
 .tag {
@@ -25,5 +27,35 @@
   @apply text-xs inline-block tracking-wider font-normal;
 }
 .tag-other {
-  @apply bg-secondary text-black;
+  @apply bg-secondary text-white;
+}
+
+.typewriter {
+  overflow: hidden;
+  border-right: 0.15em solid #f2af28;
+  white-space: nowrap;
+  margin: 0 auto;
+  letter-spacing: 0.15em;
+  animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: #f2af28;
+  }
 }

@@ -3,10 +3,10 @@ module.exports = {
   content: ['./src/**/*.{js,jsx,tsx}', './pages/**/*.{js,ts,jsx,tsx}', './components/**/*.{js,ts,jsx,tsx}'],
   theme: {
     colors: {
-      black: '#000407',
-      white: '#f5f7f7',
-      primary: '#79031d',
-      secondary: '#edb518',
+      primary: '#F2AF28',
+      secondary: '#79031d',
+      white: '#F5F7F5',
+      black: '#292830',
     },
     fontFamily: {
       poly: ['Polygraph-Bold', 'sans-serif'],
