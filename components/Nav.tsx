@@ -75,12 +75,13 @@ export default function Nav() {
         </nav>
         <Dialog as="div" className="lg:hidden" open={mobileMenuOpen} onClose={setMobileMenuOpen}>
           <div className="fixed inset-0 z-50" />
-          <Dialog.Panel className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-primary px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-white/10">
+          <Dialog.Panel className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-black px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-white/10">
             <div className="flex items-center justify-between">
-              <a href="#" className="-m-1.5 p-1.5">
+              <Link href="/" className="-m-1.5 p-1.5">
+                {' '}
                 <span className="sr-only">NL</span>
-                <button className="rounded-full bg-secondary p-3 logo">NL</button>
-              </a>
+                <button className="rounded-full bg-primary p-3 logo">NL</button>
+              </Link>
               <button type="button" className="-m-2.5 rounded-md p-2.5 text-white" onClick={() => setMobileMenuOpen(false)}>
                 <span className="sr-only">Close menu</span>
                 <XMarkIcon className="h-6 w-6" aria-hidden="true" />
@@ -92,6 +93,7 @@ export default function Nav() {
                   {navigation.map((item) => (
                     <a
                       key={item.name}
+                      onClick={() => setMobileMenuOpen(false)}
                       href={item.href}
                       className="-mx-3 block rounded-lg py-2 px-3 text-base font-semibold leading-7 text-white"
                     >

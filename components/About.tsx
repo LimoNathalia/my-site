@@ -5,7 +5,7 @@ export default function About() {
   return (
     <div id="about" className="py-12 md:py-20">
       <div className="relative flex items-center justify-center z-40 py-12 md:py-20">
-        <div className="bg-black">
+        <div className="bg-black pb-12 md:pb-0">
           <div className="mx-auto flex max-w-7xl flex-col items-center gap-y-10 gap-x-8 px-6 sm:gap-y-8 lg:px-8 xl:flex-row xl:items-stretch">
             <div className="relative -mt-8 w-full max-w-2xl xl:-mb-8 xl:w-96 xl:flex-none bg-primary rounded-2xl">
               <div className="relative aspect-[2/1] md:-mx-8 xl:mx-[30px] xl:mt-[30px] xl:aspect-auto">
@@ -19,18 +19,24 @@ export default function About() {
               </div>
               <div className="px-[30px] pb-[30px] flex flex-col items-center xl:px-0 xl:pb-0 xl:inline xl:absolute xl:bottom-[30px] xl:inset-x-[30px]">
                 <div className="pb-4 flex items-center">
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-6 h-6">
-                    <path
-                      fillRule="evenodd"
-                      d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zm-.53 14.03a.75.75 0 001.06 0l3-3a.75.75 0 10-1.06-1.06l-1.72 1.72V8.25a.75.75 0 00-1.5 0v5.69l-1.72-1.72a.75.75 0 00-1.06 1.06l3 3z"
-                      clipRule="evenodd"
-                    />
-                  </svg>{' '}
-                  <a className="text-black no-underline hover:underline px-2 italic" href="">
+                  <a
+                    className="text-black no-underline hover:underline italic"
+                    href="/Nathalia Limo CV.pdf"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     Download my CV
                   </a>
+                  <a className="px-2" href="/Nathalia Limo CV.pdf" target="_blank" rel="noopener noreferrer">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-6 h-6">
+                      <path
+                        fillRule="evenodd"
+                        d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zm-.53 14.03a.75.75 0 001.06 0l3-3a.75.75 0 10-1.06-1.06l-1.72 1.72V8.25a.75.75 0 00-1.5 0v5.69l-1.72-1.72a.75.75 0 00-1.06 1.06l3 3z"
+                        clipRule="evenodd"
+                      />
+                    </svg>{' '}
+                  </a>
                 </div>
-                <br />
                 <h3 className="text-xl pb-3 font-bold">Personal Data</h3>
                 <ul>
                   <li>
@@ -89,7 +95,7 @@ export default function About() {
                   <p>
                     I'm a frontend developer from Venezuela based in Vienna.
                     <br />
-                    I'm curious by nature and always looking for ways to develop myself further.
+                    I'm curious by nature and always looking for challenges and ways to develop myself further.
                     <br />
                     <br />
                     In the last years I have worked with web platform projects ranging from web pages to web applications
