@@ -10,7 +10,7 @@
   html,
   body {
     font-family: 'Lato', sans-serif;
-    background-color: '#F5F7F5';
+    background: 'rgba(237, 234, 234)';
     scroll-behavior: smooth;
   }
   p {
@@ -32,7 +32,7 @@
 
 .typewriter {
   overflow: hidden;
-  border-right: 0.15em solid #f2af28;
+  border-right: 0.15em solid #a179af;
   white-space: nowrap;
   margin: 0 auto;
   letter-spacing: 0.15em;
@@ -56,6 +56,6 @@
     border-color: transparent;
   }
   50% {
-    border-color: #f2af28;
+    border-color: #a179af;
   }
 }

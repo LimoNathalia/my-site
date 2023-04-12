@@ -5,13 +5,13 @@ import Link from 'next/link';
 
 const navigation = [
   { name: 'About', href: '#about' },
-  { name: 'Portfolio', href: '#portfolio' },
+  //{ name: 'Portfolio', href: '#portfolio' },
   { name: 'Contact', href: '#contact' },
 ];
 
 export default function Nav() {
   const [color, setColor] = useState('transparent');
-  const [textColor, setTextColor] = useState('#f5f7f5');
+  const [textColor, setTextColor] = useState('rgba(237, 234, 234)');
   const [borderColor, setBorderColor] = useState('transparent');
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
@@ -19,11 +19,11 @@ export default function Nav() {
     const changeColor = () => {
       if (window.scrollY >= 90) {
         setColor('#292830');
-        setTextColor('#f5f7f5');
-        setBorderColor('#F2AF28');
+        setTextColor('rgba(237, 234, 234)');
+        setBorderColor('#a179af');
       } else {
         setColor('transparent');
-        setTextColor('#f5f7f5');
+        setTextColor('rgba(237, 234, 234)');
         setBorderColor('transparent');
       }
     };

@@ -15,7 +15,7 @@ const Layout: React.FC<Props> = ({ children }) => {
         <meta property="og:image" content="NL" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <div className="flex min-h-screen flex-col justify-between">
+      <div className="flex flex-col justify-between">
         <main className="">{children}</main>
       </div>
     </>

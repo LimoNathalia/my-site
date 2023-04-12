@@ -3,7 +3,6 @@ import Footer from '../../components/Footer';
 import Header from '../../components/Header';
 import Layout from '../../components/Layout';
 import Nav from '../../components/Nav';
-import Projects from '../../components/Projects';
 import Contact from '../../components/Contact';
 
 export default function Home() {
@@ -13,7 +12,6 @@ export default function Home() {
         <Header />
         <Nav />
         <About />
-        <Projects />
         <Contact />
         <Footer />
       </Layout>
