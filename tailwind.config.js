@@ -1,12 +1,13 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: [
-    './src/**/*.{js,jsx,tsx}',
-    './pages/**/*.{js,ts,jsx,tsx}',
-    './components/**/*.{js,ts,jsx,tsx}',
-  ],
+  content: ['./src/**/*.{js,jsx,tsx}', './pages/**/*.{js,ts,jsx,tsx}', './components/**/*.{js,ts,jsx,tsx}'],
   plugins: [require('@tailwindcss/typography')],
   theme: {
+    colors: {
+      primary: '#A179AF',
+      black: '#3D3547',
+      white: '#EDEAEA',
+    },
     fontSize: {
       xs: ['0.8125rem', { lineHeight: '1.5rem' }],
       sm: ['0.875rem', { lineHeight: '1.5rem' }],
@@ -30,8 +31,7 @@ module.exports = {
           '--tw-prose-links': 'var(--tw-prose-invert-links)',
           '--tw-prose-links-hover': 'var(--tw-prose-invert-links-hover)',
           '--tw-prose-underline': 'var(--tw-prose-invert-underline)',
-          '--tw-prose-underline-hover':
-            'var(--tw-prose-invert-underline-hover)',
+          '--tw-prose-underline-hover': 'var(--tw-prose-invert-underline-hover)',
           '--tw-prose-bold': 'var(--tw-prose-invert-bold)',
           '--tw-prose-counters': 'var(--tw-prose-invert-counters)',
           '--tw-prose-bullets': 'var(--tw-prose-invert-bullets)',
@@ -303,4 +303,4 @@ module.exports = {
       },
     }),
   },
-}
+};
